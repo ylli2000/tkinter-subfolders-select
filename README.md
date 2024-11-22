@@ -36,6 +36,11 @@ def browse_folder_click(selected_folders_label, hint):
             selected_folders_label.config(text=", ".join(selected_folders))
             settings[selected_folders_key] = ",".join(selected_folders)
     root.update()
+
+# ...
+
+btn_browse = tk.Button(root, text="Select Folder(s):", width=15, command=lambda: browse_folder_click(selected_folders_label, "Select a folder"))
+selected_folders_label = tk.Label(root, borderwidth=2, width=150, relief="groove", background="white") 
 ```
 
 Where `open_directory_selection_dialog` is your entrance function. Check out the code from this repository.
