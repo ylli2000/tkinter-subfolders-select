@@ -1,5 +1,7 @@
 # tkinter-subfolders-select
 
+![Screenshot](./Screenshot.png)
+
 ### What happened
 
 Tkinter does not support the selection of multiple folders out of the box. 
