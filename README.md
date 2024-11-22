@@ -1,7 +1,19 @@
 # tkinter-subfolders-select
-tkinter does not support the selection of multiple folders out of the box. This is the native code to add that missing feature without the need of any third party library.
 
-now suppose you have something standard like this:
+### What happened
+
+Tkinter does not support the selection of multiple folders out of the box. 
+
+
+### Solution
+
+This is the native code to add that missing feature without the need of any third party library.
+
+
+### How to Use
+
+Now suppose you have something standard like this:
+
 
 ```python
 import ... # any necessary libs
