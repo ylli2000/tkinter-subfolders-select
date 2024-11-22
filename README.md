@@ -18,9 +18,9 @@ Now suppose you have something standard like this:
 ```python
 import ... # any necessary libs
 
-# This is your settings object, to memorize the subfolder you selected last time
-# I have provided you a settings object here, in a practical project you can write your settings into a 
-# settings.txt as persistent memory.
+# This is your settings object if needed:
+# I have provided you with an optional interface here, in a practical project you should write your settings into a 
+# settings.txt as persistent memory to memorize the subfolder you selected last time.
 selected_folders_key = 'my_app:selected_folders'
 settings = {} 
 settings[selected_folders_key] = ''
