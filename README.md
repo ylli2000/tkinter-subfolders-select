@@ -18,10 +18,16 @@ Now suppose you have something standard like this:
 ```python
 import ... # any necessary libs
 
-setting_mapping_folders = 'my_app:selected_folders'
-settings = {} # your settings object
+# This is your settings object, to memorize the subfolder you selected last time
+# I have provided you a settings object here, in a practical project you can write your settings into a 
+# settings.txt as persistent memory.
+selected_folders_key = 'my_app:selected_folders'
+settings = {} 
+settings[selected_folders_key] = ''
 
 # link this click function to your button
+# selected_folders_label: where you store the list of subfolders, separated by commas
+# hint: the title of the dialog box
 def browse_folder_click(selected_folders_label, hint):
     folder_path = filedialog.askdirectory(title=hint)
     if folder_path:
