@@ -7,7 +7,7 @@ now suppose you have something standard like this:
 import ... # any necessary libs
 
 setting_mapping_folders = 'my_app:selected_folders'
-settings = {} # your setting object
+settings = {} # your settings object
 
 # link this click function to your button
 def browse_folder_click(selected_folders_label, hint):
