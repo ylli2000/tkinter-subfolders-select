@@ -29,11 +29,12 @@ import ... # any necessary libs
 # settings.txt as persistent memory to memorize the subfolder you selected last time.
 selected_folders_key = 'my_app:selected_folders'
 settings = {} 
-settings[selected_folders_key] = ''
+settings[selected_folders_key] = '' # store the list of subfolders, separated by commas
 
 # link this click function to your button
-# selected_folders_label: where you store the list of subfolders, separated by commas
-# hint: the title of the dialog box
+# params:
+#  selected_folders_label: where you display the list of subfolders, separated by commas
+#  hint: the title of the dialog box
 def browse_folder_click(selected_folders_label, hint):
     folder_path = filedialog.askdirectory(title=hint)
     if folder_path:
