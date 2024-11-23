@@ -9,8 +9,9 @@ Tkinter does not support the selection of multiple folders out of the box.
 
 ### Solution
 
-This is the native code to add that missing feature without the need of any third party library.
+This is the implementation of the feature **NO NEED** for any 3rd-party library.
 
+[subfolder_dialog.py](https://github.com/ylli2000/tkinter-subfolders-select/blob/main/subfolder_dialog.py)
 
 ### How to Use
 
