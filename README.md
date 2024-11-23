@@ -41,7 +41,7 @@ def browse_folder_click(selected_folders_label, hint):
         selected_folders = open_directory_selection_dialog(root, settings, selected_folders_key, folder_path)
         if selected_folders and len(selected_folders) > 0:
             selected_folders_label.config(text=", ".join(selected_folders))
-            settings[selected_folders_key] = ",".join(selected_folders)
+            settings[selected_folders_key] = ", ".join(selected_folders)
     root.update()
 
 # ...
