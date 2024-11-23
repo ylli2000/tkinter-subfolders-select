@@ -19,6 +19,9 @@ Now suppose you have something standard like this:
 
 
 ```python
+import tkinter as tk
+from tkinter import filedialog
+from subfolder_dialog import open_directory_selection_dialog
 import ... # any necessary libs
 
 # This is your settings object if needed:
@@ -41,9 +44,13 @@ def browse_folder_click(selected_folders_label, hint):
     root.update()
 
 # ...
-
+root = tk.Tk()
+#...
 btn_browse = tk.Button(root, text="Select Folder(s):", width=15, command=lambda: browse_folder_click(selected_folders_label, "Select a folder"))
-selected_folders_label = tk.Label(root, borderwidth=2, width=150, relief="groove", background="white") 
+selected_folders_label = tk.Label(root, borderwidth=2, width=150, relief="groove", background="white")
+#...
+# RUN UI
+root.mainloop()
 ```
 
 Where `open_directory_selection_dialog` is your entrance function. Check out the code from this repository.
